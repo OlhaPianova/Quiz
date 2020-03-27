@@ -1,19 +1,19 @@
+#include"Viktoryna.h"
 #include<iostream>
-#include<string>
-#include<fstream>
 using namespace std;
 
 
+#define CLEAR system("cls");
 
 int main() {
-
+	init();
 	int action = 0;
 	do
 	{
 		cout << "\tMENU:" << endl;
 		cout << "1. Add new quiz" << endl;
 		cout << "2. Show all quizzes" << endl;
-		cout << "2. Pass one of the quizzes" << endl;
+		cout << "3. Pass one of the quizzes" << endl;
 		cout << "4. Exit" << endl;
 		cout << endl;
 		cout << "Select action: ";
@@ -21,16 +21,17 @@ int main() {
 
 		switch (action){
 		case 1: {
+			CLEAR;
 			cout << "ADD NEW QUIZ :" << endl;
+			addquiz();
 		}break;
 		case 2: {
-			cout << "ALL QUIZES: " << endl;
-
+			CLEAR;
+			showAllQuizzes();
+			passQuiz();
 		}break;
 		case 3: {
-
-		}break;
-		case 4: {
+			CLEAR;
 			cout << "Bye" << endl;
 			break;
 		}
@@ -39,7 +40,7 @@ int main() {
 		}
 		}
 
-	} while (action != 4);
+	} while (action != 3);
 
 
 

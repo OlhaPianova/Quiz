@@ -14,7 +14,9 @@ struct Quiz
 {
 	string quizName;
 	Questions* description;
-	int countQuizzes;
 };
-
+void init();
 void addquiz();
+void showAllQuizzes();
+void pushInGlobalArr(Quiz quiz);
+void passQuiz();
