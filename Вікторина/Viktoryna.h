@@ -14,6 +14,8 @@ struct Quiz
 {
 	string quizName;
 	Questions* description;
+	int questionNumb;
+
 };
 void init();
 void addquiz();

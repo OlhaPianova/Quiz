@@ -12,9 +12,8 @@ int main() {
 	{
 		cout << "\tMENU:" << endl;
 		cout << "1. Add new quiz" << endl;
-		cout << "2. Show all quizzes" << endl;
-		cout << "3. Pass one of the quizzes" << endl;
-		cout << "4. Exit" << endl;
+		cout << "2. Show all quizzes & Pass one of the quizzes" << endl;
+		cout << "3. Exit" << endl;
 		cout << endl;
 		cout << "Select action: ";
 		cin >> action;
