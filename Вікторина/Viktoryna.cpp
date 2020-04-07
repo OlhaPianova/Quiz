@@ -28,8 +28,8 @@ void passQuiz() {
 	int rightAnsver = 0;
 	cin >> number;
 	cout << "You pass quizzes: " << arrQuizzes[number - 1].quizName << endl;
-	for (int i = 0; i < arrQuizzes[i].questionNumb; i++) {
-		cout << i + 1 << ". " << arrQuizzes[number - 1].description[i].question << endl;
+	for (int i = 0; i < arrQuizzes[countQuizzes].questionNumb; i++) {
+		cout << i + 1 << ". " << arrQuizzes[i].description[i].question << endl;
 		cout << "Enter your answer: " << endl;
 		cin >> ansv;
 		if (ansv == arrQuizzes[number - 1].description[i].answer) {
@@ -81,11 +81,11 @@ void init(){
 					fin >> getQuiz.description[i].question;
 					fin >> getQuiz.description[i].answer;
 				}
+				pushInGlobalArr(getQuiz);
 			}
 			else {
 				break;
 			}
-			pushInGlobalArr(getQuiz);
 		}
 	}
 	else {
