@@ -13,8 +13,7 @@ struct Questions
 struct Quiz
 {
 	string quizName;
-	Questions* description;
-	int questionNumb;
+	Questions description[5];
 
 };
 void init();

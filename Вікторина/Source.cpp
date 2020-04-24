@@ -27,11 +27,20 @@ int main() {
 		case 2: {
 			CLEAR;
 			showAllQuizzes();
-			passQuiz();
+			cout << "If you want to pass one of quiz - select 'y' " << endl;
+			cout << "Exit - select 'n' " << endl;
+			string ansvToPassQuiz = "";
+			cin >> ansvToPassQuiz;
+			if (ansvToPassQuiz=="y") {
+				passQuiz();
+			}
+			else {
+				break;
+			}
 		}break;
 		case 3: {
 			CLEAR;
-			cout << "Bye" << endl;
+			cout << "\n\n\n\t\t\tBye!" << endl;
 			break;
 		}
 		default: {
